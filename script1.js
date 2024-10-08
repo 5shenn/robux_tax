@@ -1,6 +1,3 @@
-window.onload = function() {
-    document.getElementById('cost').value = 'R ';
-};
 
 function calculateEarnedAmount() {
     const amountInput = document.getElementById('cost').value.replace(/R |,/g, '').trim(); 
