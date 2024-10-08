@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Robux Tax Calculator</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th colspan="2">
+                <img src="/img/robux.png" alt="" style="width: 30px; padding-bottom: 7px;">
+                <input type="text" oninput="formatNumberWithCommas(this)" placeholder="Enter amount in Robux" id="cost">
+            </th>
+            <tr>
+                <th>
+                    <button id="earned" onclick="calculateEarnedAmount()" class="taxAmount"> Before Tax</button>
+                </th>
+                <th>
+                    <button id="total" onclick="calculateTotalAmount()" class="taxAmount">After Tax</button>
+                </th>
+            </tr>
+            
+            <th colspan="3">
+                <input type="text" id="amount" placeholder="Answer" readonly>
+            </th>
+        </tr>
+    </table>
+</body>
+
+<script src="script1.js"></script>
+</html>
